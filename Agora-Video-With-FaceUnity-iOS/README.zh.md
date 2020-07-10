@@ -31,6 +31,10 @@ Agora 功能实现请参考 [Agora 官方文档](https://docs.agora.io/cn/Intera
 2. 下载 [FaceUnity items](https://github.com/AgoraIO/FaceUnityLegacy/releases/download/6.6.0/FaceUnity-6.6.0-items-iOS.zip)
 3. 将下载得到的两个zip包放到 AgoraWithFaceunity/Faceunity 下后解压即可
 
+注意： `AgoraWithFaceunity`下的`Faceunity`目录需要自己创建，创建完成后的目录结构如下：
+
+![](https://github.com/mediaios/agora-faceunity-ios/blob/master/imgs/lib_dir_struct.png?raw=true)
+
 ## 如何使用 Agora 模块化 SDK的采集功能
 
 ## 支持的功能
@@ -166,12 +170,22 @@ interface AGMSenceTimeFilter : AGMVideoSource <AGMVideoSink>
 
 请联系 [Faceunity](http://www.faceunity.com) 获取证书文件替换本项目/AgoraWithFaceunity/Faceunity 文件夹中的 ”authpack.h“ 文件。
 
+
+最终项目结构：
+![](https://github.com/mediaios/agora-faceunity-ios/blob/master/imgs/prj_struct.png?raw=true)
+
+具体依赖库截图：
+![](https://github.com/mediaios/agora-faceunity-ios/blob/master/imgs/frameworks_struct.png?raw=true)
+
+
 最后使用 XCode 打开 AgoraWithFaceunity.xcodeproj，连接 iPhone／iPad 测试设备，设置有效的开发者签名后即可运行。
 
 ## 运行环境
 * XCode 8.0 +
 * iOS 真机设备
 * 不支持模拟器
+
+
 
 ## FAQ
 - 请尽量不要使用声网提供的裸数据接口集成美颜功能
